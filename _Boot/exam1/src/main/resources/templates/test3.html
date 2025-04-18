@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Test 3</title>
+</head>
+<body>
+<h2>100 이하의 두 개의 정수를 입력받아 작은 수부터 큰 수까지 차례대로 출력</h2>
+<form method="post" action="/test3">
+    <h4 th:text="'100 이하의 정수 2개를 입력하세요.'"></h4>
+    <input type="number" name="data1">
+    <input type="number" name="data2">
+    <button type="submit">계산</button>
+</form>
+
+</body>
+</html>

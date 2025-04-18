@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="o1" class="kr.hs.study.beans.Owner">
+        <constructor-arg value="kim" type="String"/>
+        <constructor-arg value="seoul" type="String"/>
+    </bean>
+
+    <bean id="c1" class="kr.hs.study.beans.cat">
+        <constructor-arg value="blue" type="String" index="0"/>
+        <constructor-arg value="4" type="int" index="1"/>
+        <constructor-arg ref="o1" index="2"/>
+    </bean>
+
+    <bean id="d1" class="kr.hs.study.beans.dog">
+        <constructor-arg value="pink" type="String" index="0"/>
+        <constructor-arg value="4" type="int" index="1"/>
+        <constructor-arg ref="o1" index="2"/>
+    </bean>
+
+
+</beans>

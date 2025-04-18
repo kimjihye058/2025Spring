@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1 {
+        color:red;
+        font-size:50px;
+        }
+    </style>
+</head>
+<body>
+    <h1 th:text = "'welcome Boot'"></h1>
+    <a th:href = "@{/test1}">test1 GET방식</a>
+    <a th:href = "@{/test2}">test2 GET방식</a>
+    <a th:href = "@{/sub1/test3}">sub1/test3 GET방식</a>
+    <a th:href = "@{/sub1/test4}">sub1/test4 GET방식</a>
+    <a th:href = "@{/sub1/test5}">sub1/test5 GET방식</a>
+
+    <form method="post" action="/test6">
+        아이디: <input type="text" name="userID"/><br/>
+        비밀번호: <input type="text" name="userPW"/><br/>
+        <button type="submit">로그인</button>
+    </form>
+</body>
+</html>
