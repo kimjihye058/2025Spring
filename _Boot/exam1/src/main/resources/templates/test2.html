@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Test 2</title>
+</head>
+<body>
+<h2>정수 n을 입력받은 후, 1부터 100까지의 정수 중에서 n의 배수만 출력</h2>
+<form method="post" action="/test2">
+    <h4 th:text="'정수 1개를 입력하세요.'"></h4>
+    <input type="number" name="n">
+    <button type="submit">계산</button>
+</form>
+
+</body>
+</html>

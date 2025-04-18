@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Test 5</title>
+</head>
+<body>
+<h2>10개의 정수를 입력받아 입력받은 수들 중 짝수의 개수와 홀수의 개수를 각각 구하여 출력</h2>
+<form method="post" action="/test5">
+    <h4 th:text="'정수 10개를 입력하세요.'"></h4>
+    <input type="number" name="data1">
+    <input type="number" name="data2">
+    <input type="number" name="data3">
+    <input type="number" name="data4">
+    <input type="number" name="data5">
+    <input type="number" name="data6">
+    <input type="number" name="data7">
+    <input type="number" name="data8">
+    <input type="number" name="data9">
+    <input type="number" name="data10">
+    <button type="submit">계산</button>
+</form>
+
+</body>
+</html>
